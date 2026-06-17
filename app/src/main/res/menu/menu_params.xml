@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile_product"
+        android:title="Продуктовая компания"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/profile_outsource"
+        android:title="Аутсорсинг (Сервисная)"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/profile_incubator"
+        android:title="Стартап-студия"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/app-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рекомендуемые методологии:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Наш кастомный анимированный вертикальный график (ЛР8) -->
+    <com.example.pm_advisor.ScoreChartView
+        android:id="@+id/scoreChartView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сортировать результаты"
+        android:backgroundTint="#1A237E"
+        android:layout_marginBottom="12dp"/>
+
+    <ListView
+        android:id="@+id/listResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".ParamsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar для меню профилей (ЛР7) -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1A237E"
+            app:title="Профиль: Продуктовая"
+            app:titleTextColor="#FFFFFF" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 1. Выбор типа проекта (ЛР3) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Тип ИТ-проекта:"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#333333" />
+
+                <!-- Ряд кнопок типов проекта (цветовая подсветка при клике) -->
+                <Button
+                    android:id="@+id/btnStartup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Стартап"
+                    android:backgroundTint="#E0E0E0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnEnterprise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Энтерпрайз"
+                    android:backgroundTint="#E0E0E0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnGov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Гос. сектор"
+                    android:backgroundTint="#E0E0E0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btnResearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Научные R&amp;D"
+                    android:backgroundTint="#E0E0E0"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="16dp" />
+
+                <!-- 2. SeekBar размера команды (ЛР4) -->
+                <TextView
+                    android:id="@+id/tvTeamSizeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Размер команды: до 5 человек"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#333333" />
+
+                <SeekBar
+                    android:id="@+id/seekBarTeamSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:max="100"
+                    android:progress="5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="16dp" />
+
+                <!-- 3. Switch-переключатели (ЛР4) -->
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchFlexibleReq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Гибкие требования (Agile)"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchFixedDeadlines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Жесткие дедлайны (Fixed)"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="16dp" />
+
+                <!-- 4. Счетчик топ-выдачи -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="80dp">
+
+                    <TextView
+                        android:id="@+id/tvTopLabel"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Показать топ методологий: 3"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnMinus"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:text="-"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:backgroundTint="#FF6D00" />
+
+                    <!-- Кнопка ПЛЮС (ЛР2) -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnPlus"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="+"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:backgroundTint="#FF6D00" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Кнопка FAB для запуска подбора (ЛР5-6) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:backgroundTint="#FF6D00"
+        app:tint="#FFFFFF"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

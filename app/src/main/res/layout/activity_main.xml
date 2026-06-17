@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Красивый заголовок по теме (ЛР2) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PM Advisor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подбор методологий для ИТ-проектов"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#757575" />
+
+    <!-- Счетчик записей из БД SQLite (ЛР11) -->
+    <TextView
+        android:id="@+id/tvMethodologiesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В базе методологий: 0"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#4CAF50"
+        android:textStyle="bold" />
+
+    <!-- Кнопки навигации по всему РГЗ (ЛР2) -->
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:text="Подобрать методологию" />
+
+    <Button
+        android:id="@+id/btnCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:text="Каталог методологий" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:text="Карта создателей" />
+
+</LinearLayout>

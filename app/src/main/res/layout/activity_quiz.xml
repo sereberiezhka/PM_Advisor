@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/tvQuizTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вопрос викторины"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Текст вопроса?"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="#333333"/>
+
+    <Button
+        android:id="@+id/btnAns0"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        android:text="Ответ 1"/>
+
+    <Button
+        android:id="@+id/btnAns1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        android:text="Ответ 2"/>
+
+    <Button
+        android:id="@+id/btnAns2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        android:text="Ответ 3"/>
+
+    <Button
+        android:id="@+id/btnAns3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="#000000"
+        android:text="Ответ 4"/>
+</LinearLayout>
